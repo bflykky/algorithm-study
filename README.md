@@ -33,5 +33,10 @@
 
 ### LeetCode
 
+<ol>
+  <li><a href="https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description/">440. K-th Smallest in Lexicographical Order</a></li>
+  <li><a href="https://leetcode.com/problems/extra-characters-in-a-string/description/">2707. Extra Characters in a String</a></li>
+</ol>
+
 ### HackerRank
 
