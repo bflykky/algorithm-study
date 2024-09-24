@@ -38,6 +38,7 @@
   <li><a href="https://leetcode.com/problems/extra-characters-in-a-string/description/">2707. Extra Characters in a String</a></li>
   <li><a href="https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/">3043. Find the Length of the Longest Common Prefix</a></li>
   <li><a href="https://leetcode.com/problems/two-sum/description/">1. Two Sum</a></li>
+  <li><a href="https://leetcode.com/problems/merge-sorted-array/description/">88. Merge Sorted Array</a></li>
 </ol>
 
 ### HackerRank
