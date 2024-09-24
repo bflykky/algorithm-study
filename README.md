@@ -36,6 +36,8 @@
 <ol>
   <li><a href="https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/description/">440. K-th Smallest in Lexicographical Order</a></li>
   <li><a href="https://leetcode.com/problems/extra-characters-in-a-string/description/">2707. Extra Characters in a String</a></li>
+  <li><a href="https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/">3043. Find the Length of the Longest Common Prefix</a></li>
+  <li><a href="https://leetcode.com/problems/two-sum/description/">1. Two Sum</a></li>
 </ol>
 
 ### HackerRank
