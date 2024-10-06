@@ -1,5 +1,7 @@
 package main.java.leetcode;
 
+import java.util.Arrays;
+
 /*
  * Sliding Window 문제. (2 Pointer라고 볼 수 있을 수도?)
  * O(n)의 시간복잡도로 푸는 게 핵심인 문제이다.
@@ -34,4 +36,32 @@ public class Problem209 {
 
         return minimumLength < nums.length + 1 ? minimumLength : 0;
     }
+
+    // binary search 방식 (O(nlogn))
+    public int minSubArrayLen2(int target, int[] nums) {
+        int sums[] = new int[nums.length + 1]; // nums[0] ... nums[i - 1]까지의 누적합 배열
+        sums[0] = 0;
+        for (int i = 1; i < sums.length; i++) {
+            sums[i] = nums[i - 1] + sums[i - 1];
+        }
+
+        int minimumLength = nums.length + 1;
+        for (int i = sums.length - 1; i >= 0 && sums[i] >= target; i--) {
+            int j = Arrays.binarySearch(sums, sums[i] - target);
+            if (j >= 0) {
+                // sums[i] - target과 동일한 값이 sums에 존재해서, 해당 인덱스를 리턴한 것이다.
+                // 우리가 찾는 인덱스는 sums[i] - target보다 큰 수의 인덱스이므로, ++ 증가 연산자를 수행한다.
+                j++;
+            } else { // 음수인 경우
+                // sums[j] -  target가 존재한다면 해당 배열에 삽입되었어야 할 인덱스(insertion point)에 대해,
+                // -(insertion point + 1)를 가리킨다.
+                // 우리는 온전한 insertion point를 원하므로 역산을 한다.
+                j = -j - 1;
+            }
+            minimumLength = minimumLength <= i - j + 1 ? minimumLength : i - j + 1;
+        }
+
+        return minimumLength != nums.length + 1 ? minimumLength : 0;
+    }
+
 }
