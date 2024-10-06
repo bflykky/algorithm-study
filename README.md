@@ -42,6 +42,7 @@
   <li><a href="https://leetcode.com/problems/valid-palindrome/description/">125. Valid Palindrome</a></li>
   <li><a href="https://leetcode.com/problems/copy-list-with-random-pointer/description/">138. Copy List with Random Pointer</a></li>
   <li><a href="https://leetcode.com/problems/minimum-size-subarray-sum/description/">209. Minimum Size Subarray Sum</a></li>
+  <li><a href="https://leetcode.com/problems/longest-common-prefix/description/">14. Longest Common Prefix</a></li>
 
 
 </ol>
